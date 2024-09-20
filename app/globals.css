@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form {
+    position: relative;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.form::after,
+.form::before {
+    content: '';
+    position: absolute;
+    width: 102%;
+    height: 102%;
+    background-image: conic-gradient(from var(--angle), transparent 90%, rgb(255, 255, 255), rgb(255, 255, 255));
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: .375rem;
+    animation: 6s spin linear infinite;
+}
+
+.form::before {
+    filter: blur(1.2rem);
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
