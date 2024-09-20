@@ -7,7 +7,7 @@ export default function page() {
 
     <div className="min-h-screen bg-black text-white">
       <Navbar />
-      {/* <Loading /> */}
+      <Loading />
     </div>
   )
 }
