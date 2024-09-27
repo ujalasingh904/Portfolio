@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Navbar() {
     return (
         <div className="w-full flex justify-center fixed top-0 p-6 ">
-            <div className="max-w-[30rem] mx-auto flex justify-center  border-4 rounded-full p-5 px-7 shadow-3xl ">
+            <div className="max-w-[30rem] mx-auto flex justify-center  border-4 rounded-full p-5 px-7 shadow-3xl backdrop-blur-lg">
                 <ul className="flex space-x-6">
                     <li className="relative group">
                         <Link href="/">Home</Link>
