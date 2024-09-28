@@ -53,8 +53,8 @@ export default function Home() {
     }, [displayText, isDeleting, jobTitleIndex])
 
     return (
-        <div className="pt-[16rem] flex items-center justify-center p-4">
-            <div className="max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-8">
+        <div className="py-[16rem] flex items-center justify-center p-4">
+            <div className="max-w-7xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-8">
                 <div className="text-center md:text-left space-y-14">
                     <h1 className="text-4xl md:text-5xl font-semibold text-white mb-2">
                         Hey, I'm <span className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 text-transparent bg-clip-text">Ujala Singh</span>
@@ -64,9 +64,17 @@ export default function Home() {
                         <span className="animate-blink">|</span>
                     </p>
                     <div className="flex gap-4 justify-center md:justify-start mb-6">
-                        <Button variant="default" className="bg-white text-black border-2 hover:bg-black hover:border-white hover:text-white">CONTACT</Button>
+                        <Button variant="default"
+                            className="z-30 bg-white rounded-md text-black relative  after:-z-20 after:absolute after:h-1 after:w-1 after:bg-black after:-left-1 overflow-hidden after:bottom-[50%]  after:rounded-xl after:hover:scale-[100] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 border-2 text-md font-medium hover:text-white"
+                        >
+                            Contact
+                        </Button>
+
+                        {/* <Button variant="default" className="bg-white text-black border-2 hover:bg-black hover:border-white hover:text-white">CONTACT</Button> */}
                         <Link href="https://drive.google.com/file/d/1wew5Lq5fhXhe8oDYlpDLL5FylO-sfF7A/view?usp=drive_link">
-                            <Button variant="default" className="border-2 border-white text-white hover:bg-white hover:text-black">RESUME</Button>
+                            <Button variant="default"
+                                className="z-30 bg-black rounded-md text-white relative  after:-z-20 after:absolute after:h-1 after:w-1 after:bg-white after:-left-1 overflow-hidden after:bottom-[50%]  after:rounded-xl after:hover:scale-[100] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 border-2 font-medium hover:text-black"
+                            >RESUME</Button>
                         </Link>
                     </div>
                     <div className="flex gap-4 justify-center md:justify-start text-white">

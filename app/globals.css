@@ -2,41 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-.form {
+.marquee1 {
+
+    animation: marquee1 20s linear infinite;
+}
+
+@keyframes marquee1 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.marquee2 {
+
+    animation: marquee2 20s linear infinite;
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+.flex {
+    flex-shrink: 0;
+    /* Prevent the flex items from shrinking */
+}
+
+.new {
     position: relative;
 }
 
-@property --angle {
-    syntax: '<angle>';
-    initial-value: 0deg;
-    inherits: false;
-}
-
-.form::after,
-.form::before {
+.new::before {
     content: '';
     position: absolute;
-    width: 102%;
-    height: 102%;
-    background-image: conic-gradient(from var(--angle), transparent 90%, rgb(255, 255, 255), rgb(255, 255, 255));
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    border-radius: .375rem;
-    animation: 6s spin linear infinite;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: white;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    border-radius: 1rem;
+    transition: transform 0.5s ease;
 }
 
-.form::before {
-    filter: blur(1.2rem);
-}
-
-@keyframes spin {
-    from {
-        --angle: 0deg;
-    }
-
-    to {
-        --angle: 360deg;
-    }
+.new:hover::before {
+    transform-origin: bottom left;
+    transform: scaleX(1);
 }
