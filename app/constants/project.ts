@@ -4,12 +4,13 @@ import img3 from "../assets/Projects/codeswear.png";
 import img4 from "../assets/Projects/mee-shop.png";
 import img5 from "../assets/Projects/flavor-feast.png";
 import img6 from "../assets/Projects/todo.png";
+import  { StaticImageData } from "next/image";
 
 interface Project {
     id:number,
     title:string,
     description:string,
-    image:string,
+    image:StaticImageData,
     live:string,
     source:string
 }

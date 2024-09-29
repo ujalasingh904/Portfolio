@@ -29,7 +29,7 @@ export default function ExperienceSection() {
             <div className="w-[80rem] flex flex-col space-y-12">
                 <h2 className="text-4xl font-bold  mb-12">Experience</h2>
                 <div className="space-y-12">
-                    {experiences.map((exp, index) => (
+                    {experiences.map((exp,) => (
                         <div
                             className={`p-8 rounded-lg shadow-lg space-y-8  text-white border border-gray-800 `}
                         >

@@ -106,7 +106,7 @@
 // }
 
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import img1 from "@/app/assets/skills/bootstrap.png";
 import img2 from "@/app/assets/skills/c.png";
 import img3 from "@/app/assets/skills/c++.png";
@@ -128,7 +128,13 @@ import img18 from "@/app/assets/skills/tailwindcss.png";
 import img19 from "@/app/assets/skills/thunder.png";
 import img20 from "@/app/assets/skills/vercel.png";
 
-const SkillImage = ({ src, alt, white = false }) => (
+interface SkillImageProps {
+  src: StaticImageData;
+  alt: string;
+  white?: boolean;
+}
+
+const SkillImage = ({ src, alt, white = false }:SkillImageProps) :JSX.Element => (
   <div className={`w-[5rem] h-[5rem] flex items-center justify-center ${white ? 'bg-white' : ''}`}>
     <Image className="w-[5rem]" src={src} alt={alt} />
   </div>

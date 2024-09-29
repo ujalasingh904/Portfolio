@@ -1,12 +1,9 @@
 "use client"
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
-import { Github, Linkedin, Instagram, Twitter } from 'lucide-react'
+import Image, { StaticImageData } from 'next/image' 
 import { Button } from "@/components/ui/button"
-import img1 from "../app/assets/profile-pic.png"
-import { SiLeetcode } from "react-icons/si";
-import { SiGeeksforgeeks } from "react-icons/si";
+import img1 from "../app/assets/profile-pic.png" 
 import Link from 'next/link'
 import img2 from "../app/assets/socials/gg.png"
 import img3 from "../app/assets/socials/instagram.png"
@@ -25,7 +22,7 @@ const jobTitles = [
 
 interface LinkProps {
     href: string,
-    image: string,
+    image: StaticImageData,
     alt: string
 }
 
@@ -127,7 +124,7 @@ export default function Home() {
                     </div>
                     <div className="flex gap-4 items-center justify-center md:justify-start text-white">
                         {
-                            links.map((link, index) => (
+                            links.map((link) => (
                                 <Link href={link.href} target='_blank'>
                                     <Image
                                         src={link.image}
