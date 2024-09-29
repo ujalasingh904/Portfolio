@@ -9,7 +9,7 @@ interface Project {
     id:number,
     title:string,
     description:string,
-    image:any,
+    image:string,
     live:string,
     source:string
 }

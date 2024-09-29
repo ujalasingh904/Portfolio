@@ -8,7 +8,7 @@ import Link from "next/link";
 interface ThreeDCardDemoProps {
     title: string;
     description: string;
-    image: any;
+    image: string;
     live: string;
     source: string;
 }

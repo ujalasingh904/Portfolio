@@ -25,7 +25,7 @@ const jobTitles = [
 
 interface LinkProps {
     href: string,
-    image: any,
+    image: string,
     alt: string
 }
 
