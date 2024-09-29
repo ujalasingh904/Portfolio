@@ -7,6 +7,7 @@ import Skills from "@/components/skills";
 import Projects from "@/components/projects";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function page() {
   return (
@@ -19,6 +20,7 @@ export default function page() {
       <Projects />
       <Experience />
       <Contact />
+      <Footer />
     </div>
   )
 }

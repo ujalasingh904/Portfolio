@@ -124,8 +124,10 @@ export default function Home() {
                     </div>
                     <div className="flex gap-4 items-center justify-center md:justify-start text-white">
                         {
-                            links.map((link) => (
-                                <Link href={link.href} target='_blank'>
+                            links.map((link,index) => (
+                                <Link href={link.href} target='_blank'
+                                    key={index}
+                                >
                                     <Image
                                         src={link.image}
                                         alt={link.alt}
