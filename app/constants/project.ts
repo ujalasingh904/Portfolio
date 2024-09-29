@@ -5,7 +5,16 @@ import img4 from "../assets/Projects/mee-shop.png";
 import img5 from "../assets/Projects/flavor-feast.png";
 import img6 from "../assets/Projects/todo.png";
 
-export const project = [
+interface Project {
+    id:number,
+    title:string,
+    description:string,
+    image:any,
+    live:string,
+    source:string
+}
+
+export const project:Project[] = [
   {
     id: 1,
     title: "Chat App",

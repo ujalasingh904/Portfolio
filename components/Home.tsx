@@ -8,12 +8,59 @@ import img1 from "../app/assets/profile-pic.png"
 import { SiLeetcode } from "react-icons/si";
 import { SiGeeksforgeeks } from "react-icons/si";
 import Link from 'next/link'
+import img2 from "../app/assets/socials/gg.png"
+import img3 from "../app/assets/socials/instagram.png"
+import img4 from "../app/assets/socials/leetcode.png"
+import img5 from "../app/assets/socials/linkedin.png"
+import img6 from "../app/assets/socials/twitter.png"
+import img7 from "../app/assets/socials/github.png"
 
 const jobTitles = [
     "Web Developer",
     "Full Stack Developer",
     "Frontend Developer",
     "Backend Developer"
+]
+
+
+interface LinkProps {
+    href: string,
+    image: any,
+    alt: string
+}
+
+const links: LinkProps[] = [
+    {
+        href: "https://github.com/ujalasingh904",
+        image: img7,
+        alt: "Github"
+    },
+    {
+        href: "https://www.linkedin.com/in/ujala-singh-24b2a3264/",
+        image: img5,
+        alt: "Linkedin"
+    },
+    {
+        href: "https://www.instagram.com/singhujala2003/",
+        image: img3,
+        alt: "Instagram"
+    },
+    {
+        href: "https://x.com/singhujala2003",
+        image: img6,
+        alt: "Twitter"
+    },
+    {
+        href: "https://leetcode.com/u/ujalasingh904/",
+        image: img4,
+        alt: "Leetcode"
+    },
+    {
+        href: "https://www.geeksforgeeks.org/user/ujalasingh904/",
+        image: img2,
+        alt: "GeeksforGeeks"
+    }
+
 ]
 
 export default function Home() {
@@ -70,20 +117,27 @@ export default function Home() {
                             Contact
                         </Button>
 
-                        {/* <Button variant="default" className="bg-white text-black border-2 hover:bg-black hover:border-white hover:text-white">CONTACT</Button> */}
-                        <Link href="https://drive.google.com/file/d/1wew5Lq5fhXhe8oDYlpDLL5FylO-sfF7A/view?usp=drive_link">
+                        <Link
+                            target='_blank'
+                            href="https://drive.google.com/file/d/1wew5Lq5fhXhe8oDYlpDLL5FylO-sfF7A/view?usp=drive_link">
                             <Button variant="default"
                                 className="z-30 bg-black rounded-md text-white relative  after:-z-20 after:absolute after:h-1 after:w-1 after:bg-white after:-left-1 overflow-hidden after:bottom-[50%]  after:rounded-xl after:hover:scale-[100] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 border-2 font-medium hover:text-black"
                             >RESUME</Button>
                         </Link>
                     </div>
-                    <div className="flex gap-4 justify-center md:justify-start text-white">
-                        <Link href="https://github.com/ujalasingh904"><Github className="w-6 h-6 hover:scale-[1.8] transition-all duration-200" /></Link>
-                        <Link href="https://www.linkedin.com/in/ujala-singh-24b2a3264/"><Linkedin className="w-6 h-6 hover:scale-[1.8] transition-all duration-200" /></Link>
-                        <Link href="https://www.instagram.com/singhujala2003/"><Instagram className="w-6 h-6 hover:scale-[1.8] transition-all duration-200" /></Link>
-                        <Link href="https://x.com/singhujala2003"><Twitter className="w-6 h-6 hover:scale-[1.8] transition-all duration-200" /></Link>
-                        <Link href="https://leetcode.com/u/ujalasingh904/"><SiLeetcode className="w-6 h-6 hover:scale-[1.8] transition-all duration-200" /></Link>
-                        <Link href="https://www.geeksforgeeks.org/user/ujalasingh904/"><SiGeeksforgeeks className="w-6 h-6 hover:scale-[1.8] transition-all duration-200" /></Link>
+                    <div className="flex gap-4 items-center justify-center md:justify-start text-white">
+                        {
+                            links.map((link, index) => (
+                                <Link href={link.href} target='_blank'>
+                                    <Image
+                                        src={link.image}
+                                        alt={link.alt}
+                                        className={` ${link.alt === "Leetcode" ? "w-6 h-6" : "w-8 h-8"}  ${link.alt === "Github" ? "rounded-full bg-white" : ""} hover:scale-[1.8] transition-all duration-200`}
+                                    />
+                                </Link>
+                            ))
+                        }
+
                     </div>
                 </div>
                 <div className="w-48 h-48 md:w-[20rem] md:h-[20rem]  rounded-full overflow-hidden bg-[#2d3748] flex-shrink-0">

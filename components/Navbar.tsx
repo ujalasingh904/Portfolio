@@ -8,8 +8,7 @@ export default function Navbar() {
             <div className="max-w-[30rem] mx-auto flex justify-center  border-4 rounded-full p-5 px-7 shadow-3xl backdrop-blur-xl">
                 <ul className="flex space-x-6">
                     <li className="relative group new">
-                        <Link href="/">Home</Link>
-                        <span className=""></span>
+                        <Link href="/">Home</Link> 
                     </li>
                     <li className="relative group new">
                         <Link href="/about">About</Link>
@@ -24,7 +23,7 @@ export default function Navbar() {
                         <Link href="/experience">Experience</Link>
                     </li>
                     <li className="relative group new">
-                        <Link href="/socials">Socials</Link>
+                        <Link href="/socials">Contact</Link>
                     </li>
                 </ul>
 

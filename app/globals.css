@@ -4,21 +4,22 @@
 
 .marquee1 {
 
-    animation: marquee1 20s linear infinite;
+    animation: marquee1 15s linear infinite;
 }
 
 @keyframes marquee1 {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
 
     100% {
         transform: translateX(-100%);
     }
 }
+
 .marquee2 {
 
-    animation: marquee2 20s linear infinite;
+    animation: marquee2 15s linear infinite;
 }
 
 @keyframes marquee2 {
@@ -27,7 +28,7 @@
     }
 
     100% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
 }
 
@@ -59,3 +60,4 @@
     transform-origin: bottom left;
     transform: scaleX(1);
 }
+

@@ -3,7 +3,7 @@ import { project } from "../app/constants/project";
 
 export default function Projects() {
     return (
-        <div className="w-full flex items-center justify-center">
+        <div className="w-full flex items-center justify-center pb-[16rem]">
             <div className="max-w-7xl ">
                 <h1 className="text-4xl font-bold">Projects</h1>
                 <div className="flex  flex-wrap items-center justify-around">
