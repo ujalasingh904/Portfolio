@@ -61,7 +61,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="flex items-center justify-center pb-[16rem]">
+    <div className="flex items-center justify-center py-[16rem] min-h-screen bg-black text-white ">
       <div className="w-[80rem] space-y-20 overflow-hidden">
         <h1 className="text-4xl font-bold">Skills</h1>
         <div className="space-y-24">

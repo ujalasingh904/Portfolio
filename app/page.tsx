@@ -8,6 +8,7 @@ import Projects from "@/components/projects";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Education from "@/components/Education";
 
 export default function page() {
   return (
@@ -16,6 +17,7 @@ export default function page() {
       <Navbar />
       <Home />
       <About />
+      <Education/>
       <Skills />
       <Projects />
       <Experience />

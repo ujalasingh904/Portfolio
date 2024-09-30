@@ -31,7 +31,7 @@ export default function Loading() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
       <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-6">
-        <h2 className="text-2xl font-bold mb-4">Loading....</h2>
+        <h2 className="text-2xl font-bold mb-4 text-white">Loading....</h2>
 
         <div className="relative pt-1">
           <div className="flex mb-2 items-center justify-end">
