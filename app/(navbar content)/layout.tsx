@@ -28,7 +28,7 @@ export default function RootLayout({
                             <Link href="/education">Education</Link>
                         </li>
                         <li className="relative group new">
-                            <Link href="/socials">Contact</Link>
+                            <Link href="/contact">Contact</Link>
                         </li>
                     </ul>
 
