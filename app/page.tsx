@@ -36,25 +36,25 @@ export default function Page() {
     return () => clearTimeout(timer);
   }, []);
 
-  // if (isLoading) {
-  //   return (
-  //     <div className="min-h-screen bg-black text-white">
-  //       <Loading />
-  //     </div>
-  //   );
-  // }
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-black text-white">
+        <Loading />
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       <Navbar />
-      {/* <Home />
+      <Home />
       <About />
       <Education />
       <Skills />
       <Projects />
       <Experience />
       <Contact />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
