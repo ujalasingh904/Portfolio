@@ -34,31 +34,7 @@ const SkillImage = ({ src, alt, white = false }:SkillImageProps) :JSX.Element =>
 );
 
 export default function Skills() {
-  // const skillsRow1 = [
-  //   { src: "/assets/skills/nextjs.png", alt: "NextJS", white: true },
-  //   { src: "/assets/skills/c.png", alt: "C" },
-  //   { src: "/assets/skills/c++.png", alt: "C++" },
-  //   { src: "/assets/skills/css.png", alt: "CSS" },
-  //   { src: "/assets/skills/expressjs.png", alt: "ExpressJS", white: true },
-  //   { src: "/assets/skills/git.png", alt: "Git" },
-  //   { src: "/assets/skills/github.png", alt: "GitHub", white: true },
-  //   { src: "/assets/skills/html.png", alt: "HTML" },
-  //   { src: "/assets/skills/java.png", alt: "Java" },
-  //   { src: "/assets/skills/js.png", alt: "JavaScript" },
-  // ];
-
-  // const skillsRow2 = [
-  //   { src: "/assets/skills/mongoDB.png", alt: "MongoDB" },
-  //   { src: "/assets/skills/netlify.png", alt: "Netlify" },
-  //   { src: "/assets/skills/postman.png", alt: "Postman" },
-  //   { src: "/assets/skills/bootstrap.png", alt: "Bootstrap" },
-  //   { src: "/assets/skills/nodejs.png", alt: "NodeJS" },
-  //   { src: "/assets/skills/react.png", alt: "React" },
-  //   { src: "/assets/skills/shadcn.png", alt: "Shadcn", white: true },
-  //   { src: "/assets/skills/tailwindcss.png", alt: "TailwindCSS" },
-  //   { src: "/assets/skills/vercel.png", alt: "Vercel", white: true },
-  //   { src: "/assets/skills/thunder.png", alt: "Thunder" },
-  // ];
+   
   const skillsRow1 = [
     { src: img13, alt: "NextJS", white: true },
     { src: img2, alt: "C" },
@@ -86,10 +62,10 @@ export default function Skills() {
   ];
 
   return (
-    <div className="flex items-center justify-center py-[16rem] min-h-screen bg-black text-white ">
+    <div  className="flex items-center justify-center py-[16rem] min-h-screen bg-black text-white ">
       <div className="w-[80rem] space-y-20 overflow-hidden">
         <h1 className="text-4xl font-bold">Skills</h1>
-        <div className="space-y-24">
+        <div data-aos="zoom-out" data-aos-delay="300" className="space-y-24">
           <div className="flex animate-marquee">
             <div className="flex shrink-0 gap-[6rem]">
               {[...skillsRow1, ...skillsRow1].map((skill, index) => (

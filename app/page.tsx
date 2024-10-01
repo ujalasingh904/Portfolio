@@ -1,3 +1,5 @@
+"use client"
+import React, { useState, useEffect } from 'react';
 import Navbar from "@/components/Navbar";
 import Loading from "./loading";
 import "./globals.css";
@@ -9,20 +11,50 @@ import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Education from "@/components/Education";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
-export default function page() {
+export default function Page() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine', 
+      once: true,      
+    });
+  }, []);  
+ 
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);   
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  // if (isLoading) {
+  //   return (
+  //     <div className="min-h-screen bg-black text-white">
+  //       <Loading />
+  //     </div>
+  //   );
+  // }
+
   return (
-
-    <div className="min-h-screen  bg-black text-white">
+    <div className="min-h-screen bg-black text-white overflow-hidden">
       <Navbar />
-      <Home />
+      {/* <Home />
       <About />
-      <Education/>
+      <Education />
       <Skills />
       <Projects />
       <Experience />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
-  )
+  );
 }

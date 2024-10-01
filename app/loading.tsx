@@ -29,7 +29,7 @@ export default function Loading() {
   }, [progress, controls])
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-slate-900 via-gray-900 to-gray-900">
       <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-6">
         <h2 className="text-2xl font-bold mb-4 text-white">Loading....</h2>
 

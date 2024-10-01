@@ -61,10 +61,10 @@ export default function Skills() {
   ];
 
   return (
-    <div className="flex items-center justify-center pb-[16rem]">
+    <div   className="flex items-center justify-center pb-[16rem]">
       <div className="w-[80rem] space-y-20 overflow-hidden">
         <h1 className="text-4xl font-bold">Skills</h1>
-        <div className="space-y-24">
+        <div data-aos="zoom-out" data-aos-delay="300" className="space-y-24">
           <div className="flex animate-marquee">
             <div className="flex shrink-0 gap-[6rem]">
               {[...skillsRow1, ...skillsRow1].map((skill, index) => (

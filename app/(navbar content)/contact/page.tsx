@@ -26,7 +26,7 @@ export default function Contact() {
             <div className="w-[80rem] space-y-12">
                 <h1 className="text-4xl font-bold ">Contact</h1>
 
-                <div className="w-full flex justify-center">
+                <div data-aos="zoom-in"  className="w-full flex justify-center">
 
                     <form onSubmit={handleSubmit} className='flex flex-col gap-y-4 w-[32rem] p-16 rounded-xl border-gray-800 border-2  '>
                         <div>

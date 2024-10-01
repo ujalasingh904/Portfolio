@@ -57,7 +57,7 @@ export default function Education() {
 
                     {
                         EducationArray.map((item, index) => (
-                            <div key={index} className='p-8 rounded-lg shadow-lg space-y-8  text-white border border-gray-800'>
+                            <div data-aos={`${index%2==0?"fade-right":"fade-left"}`} data-aos-delay={`${index*200}`} key={index} className='p-8 rounded-lg shadow-lg space-y-8  text-white border border-gray-800'>
                                 <div className="flex justify-between items-center">
                                     <h1 className="text-2xl flex items-center gap-x-2">
                                         <GraduationCap />

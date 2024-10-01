@@ -25,7 +25,7 @@ const experiences: Experience[] = [
 
 export default function ExperienceSection() {
     return (
-        <section className="pb-[16rem] flex items-center justify-center">
+        <section data-aos="fade-up" data-aos-delay={`200`} className="pb-[16rem] flex items-center justify-center">
             <div className="w-[80rem] flex flex-col space-y-12">
                 <h2 className="text-4xl font-bold  mb-12">Experience</h2>
                 <div className="space-y-12">

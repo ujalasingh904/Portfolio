@@ -76,9 +76,9 @@ export default function Home() {
 
                 if (displayText === currentTitle) {
                     setIsDeleting(true)
-                    timer = setTimeout(typeEffect, 1500) // Wait before starting to delete
+                    timer = setTimeout(typeEffect, 1500)  
                 } else {
-                    timer = setTimeout(typeEffect, 100) // Type speed
+                    timer = setTimeout(typeEffect, 100)  
                 }
             } else {
                 setDisplayText(currentTitle.substring(0, displayText.length - 1))
@@ -87,7 +87,7 @@ export default function Home() {
                     setIsDeleting(false)
                     setJobTitleIndex((prevIndex) => (prevIndex + 1) % jobTitles.length)
                 }
-                timer = setTimeout(typeEffect, 50) // Delete speed
+                timer = setTimeout(typeEffect, 50)  
             }
         }
 
@@ -99,7 +99,7 @@ export default function Home() {
     return (
         <div className="py-[16rem] flex items-center justify-center p-4">
             <div className="max-w-7xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-8">
-                <div className="text-center md:text-left space-y-14">
+                <div data-aos="fade-right" className="text-center md:text-left space-y-14">
                     <h1 className="text-4xl md:text-5xl font-semibold text-white mb-2">
                         Hey, I'm <span className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 text-transparent bg-clip-text">Ujala Singh</span>
                     </h1>
@@ -139,7 +139,7 @@ export default function Home() {
 
                     </div>
                 </div>
-                <div className="w-48 h-48 md:w-[20rem] md:h-[20rem]  rounded-full overflow-hidden bg-[#2d3748] flex-shrink-0">
+                <div data-aos="fade-left"  className="w-48 h-48 md:w-[20rem] md:h-[20rem]  rounded-full overflow-hidden bg-[#2d3748] flex-shrink-0">
                     <Image
                         src={img1}
                         alt="Ujala Singh"
