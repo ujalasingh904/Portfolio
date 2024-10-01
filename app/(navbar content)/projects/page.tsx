@@ -7,8 +7,8 @@ export default function Projects() {
             <div className="max-w-7xl ">
                 <h1 className="text-4xl font-bold text-white">Projects</h1>
                 <div className="flex  flex-wrap items-center justify-around">
-                    {project.map((item) => (
-                        <ThreeDCardDemo key={item.id} title={item.title} description={item.description} image={item.image} live={item.live} source={item.source} />
+                    {project.map((item, index) => (
+                        <ThreeDCardDemo index={index} key={item.id} title={item.title} description={item.description} image={item.image} live={item.live} source={item.source} />
                     ))}
 
                 </div>
