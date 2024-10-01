@@ -10,7 +10,7 @@ interface Project {
     id:number,
     title:string,
     description:string,
-    image:StaticImageData,
+    image: string | StaticImageData,
     live:string,
     source:string
 }

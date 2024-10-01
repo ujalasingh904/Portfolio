@@ -42,7 +42,7 @@ const EducationArray: EducationItemProps[] = [
         cgpa: "91.2%",
         maxcgpa: "100%",
         achievements: [
-            "Ranked in top 5% of the class",
+            "Ranked in top 5% of the class", 
             "Awarded 2 Trophies for scoring more than 90% in board exams"
         ]
     },

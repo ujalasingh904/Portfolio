@@ -22,9 +22,9 @@ export default function Contact() {
     }
     
     return (
-        <div className="w-full flex items-center justify-center py-[10rem] min-h-screen bg-black">
+        <div className="w-full flex items-center justify-center py-[10rem] min-h-screen bg-black text-white">
             <div className="w-[80rem] space-y-12">
-                <h1 className="text-4xl font-bold text-white">Contact</h1>
+                <h1 className="text-4xl font-bold ">Contact</h1>
 
                 <div className="w-full flex justify-center">
 

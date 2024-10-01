@@ -22,7 +22,7 @@ import img19 from "@/app/assets/skills/thunder.png";
 import img20 from "@/app/assets/skills/vercel.png";
 
 interface SkillImageProps {
-  src: StaticImageData;
+  src: string | StaticImageData;
   alt: string;
   white?: boolean;
 }
@@ -81,22 +81,7 @@ export default function Skills() {
           </div>
         </div>
       </div>
-      <style jsx global>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        @keyframes marquee-reverse {
-          0% { transform: translateX(-50%); }
-          100% { transform: translateX(0); }
-        }
-        .animate-marquee {
-          animation: marquee 15s linear infinite;
-        }
-        .animate-marquee-reverse {
-          animation: marquee-reverse 15s linear infinite;
-        }
-      `}</style>
+
     </div>
   );
 }

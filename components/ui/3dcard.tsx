@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Link from "next/link";
@@ -8,7 +8,7 @@ import Link from "next/link";
 interface ThreeDCardDemoProps {
     title: string;
     description: string;
-    image: string;
+    image: string | StaticImageData;
     live: string;
     source: string;
 }

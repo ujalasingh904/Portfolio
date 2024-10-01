@@ -22,7 +22,7 @@ import img19 from "@/app/assets/skills/thunder.png";
 import img20 from "@/app/assets/skills/vercel.png";
 
 interface SkillImageProps {
-  src: StaticImageData;
+  src: string | StaticImageData;
   alt: string;
   white?: boolean;
 }
@@ -34,6 +34,31 @@ const SkillImage = ({ src, alt, white = false }:SkillImageProps) :JSX.Element =>
 );
 
 export default function Skills() {
+  // const skillsRow1 = [
+  //   { src: "/assets/skills/nextjs.png", alt: "NextJS", white: true },
+  //   { src: "/assets/skills/c.png", alt: "C" },
+  //   { src: "/assets/skills/c++.png", alt: "C++" },
+  //   { src: "/assets/skills/css.png", alt: "CSS" },
+  //   { src: "/assets/skills/expressjs.png", alt: "ExpressJS", white: true },
+  //   { src: "/assets/skills/git.png", alt: "Git" },
+  //   { src: "/assets/skills/github.png", alt: "GitHub", white: true },
+  //   { src: "/assets/skills/html.png", alt: "HTML" },
+  //   { src: "/assets/skills/java.png", alt: "Java" },
+  //   { src: "/assets/skills/js.png", alt: "JavaScript" },
+  // ];
+
+  // const skillsRow2 = [
+  //   { src: "/assets/skills/mongoDB.png", alt: "MongoDB" },
+  //   { src: "/assets/skills/netlify.png", alt: "Netlify" },
+  //   { src: "/assets/skills/postman.png", alt: "Postman" },
+  //   { src: "/assets/skills/bootstrap.png", alt: "Bootstrap" },
+  //   { src: "/assets/skills/nodejs.png", alt: "NodeJS" },
+  //   { src: "/assets/skills/react.png", alt: "React" },
+  //   { src: "/assets/skills/shadcn.png", alt: "Shadcn", white: true },
+  //   { src: "/assets/skills/tailwindcss.png", alt: "TailwindCSS" },
+  //   { src: "/assets/skills/vercel.png", alt: "Vercel", white: true },
+  //   { src: "/assets/skills/thunder.png", alt: "Thunder" },
+  // ];
   const skillsRow1 = [
     { src: img13, alt: "NextJS", white: true },
     { src: img2, alt: "C" },
@@ -81,22 +106,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-      <style jsx global>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        @keyframes marquee-reverse {
-          0% { transform: translateX(-50%); }
-          100% { transform: translateX(0); }
-        }
-        .animate-marquee {
-          animation: marquee 15s linear infinite;
-        }
-        .animate-marquee-reverse {
-          animation: marquee-reverse 15s linear infinite;
-        }
-      `}</style>
     </div>
   );
 }
