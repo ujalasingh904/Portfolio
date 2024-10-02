@@ -21,10 +21,10 @@ export default function Navbar() {
                     <li className="relative group new">
                         <Link href="/projects">Projects</Link>
                     </li>
-                    <li className="relative group new">
+                    <li className="relative group new hidden sm:block">
                         <Link href="/education">Education</Link>
                     </li>
-                    <li className="relative group new">
+                    <li className="relative group new hidden sm:block">
                         <Link href="/contact">Contact</Link>
                     </li>
                 </ul>

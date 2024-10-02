@@ -50,28 +50,29 @@ const EducationArray: EducationItemProps[] = [
 
 export default function Education() {
     return (
-        <section className="pb-[16rem] flex items-center justify-center">
-            <div className="w-[80rem] flex flex-col space-y-12">
-                <h2 className="text-4xl font-bold  mb-12">Education</h2>
+        <section className="pb-[10rem] md:pb-[16rem] p-4 flex items-center justify-center">
+            <div className="w-full md:max-w-5xl lg:max-w-6xl xl:max-w-7xl flex flex-col space-y-12">
+                <h2 className="text-2xl md:text-4xl font-bold  mb-12">Education</h2>
                 <div className="space-y-12">
 
                     {
                         EducationArray.map((item, index) => (
-                            <div data-aos={`${index%2==0?"fade-right":"fade-left"}`} data-aos-delay={`${index*200}`} key={index} className='p-8 rounded-lg shadow-lg space-y-8  text-white border border-gray-800'>
-                                <div className="flex justify-between items-center">
-                                    <h1 className="text-2xl flex items-center gap-x-2">
-                                        <GraduationCap />
+                            <div data-aos={`${index%2==0?"fade-right":"fade-left"}`} data-aos-delay={`${index*200}`} key={index} 
+                            className='p-3 sm:p-4 md:p-8 rounded-lg shadow-lg space-y-4 md:space-y-8  text-white border border-gray-800'>
+                                <div className="flex flex-col md:flex-row justify-between md:items-center space-y-2 md:space-y-0">
+                                    <h1 className="text-sm md:text-2xl flex items-center gap-x-2">
+                                        <GraduationCap  className="w-[1.1rem] md:w-[2rem] "  />
                                         {item.degree}
                                     </h1>
-                                    <p className="flex items-center gap-x-2">
-                                        <Calendar />
+                                    <p className="flex justify-start items-center gap-x-2">
+                                        <Calendar  className="w-[1.1rem] md:w-[2rem]" />
                                         {item.year}
                                     </p>
 
                                 </div>
-                                <div className="text-lg space-y-2">
+                                <div className="text-sm md:text-lg space-y-2">
                                     <p className="flex items-center gap-x-2">
-                                        <MapPin />
+                                        <MapPin  className="w-[1.1rem] md:w-[2rem]" />
                                         {item.institution}, {item.location}
                                     </p>
 
@@ -81,9 +82,9 @@ export default function Education() {
                                 </div>
                                 <div className="space-y-2">
                                     <h1 className="flex items-center gap-x-2">
-                                        <Award />
+                                        <Award className="w-[1.1rem] md:w-[2rem]"  />
                                         Achievements</h1>
-                                    <ul className='list-disc list-inside space-y-2 text-lg'>
+                                    <ul className='list-disc list-inside space-y-2 text-sm md:text-lg'>
                                         {
                                             item.achievements.map((achievement, i) => (
                                                 <li key={i}>{achievement}</li>

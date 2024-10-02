@@ -52,7 +52,7 @@ export default function Education() {
     return (
         <section className="pb-[12rem] flex items-center justify-center min-h-screen bg-black text-white pt-[10rem]">
             <div className="w-[80rem] flex flex-col space-y-12">
-                <h2 className="text-4xl font-bold  mb-12">Education</h2>
+                <h2 className="text-2xl md:text-4xl font-bold  mb-12">Education</h2>
                 <div className="space-y-12">
 
                     {

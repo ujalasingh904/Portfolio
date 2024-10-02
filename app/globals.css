@@ -18,10 +18,7 @@
   }
 
 
-.flex {
-    flex-shrink: 0;
-    /* Prevent the flex items from shrinking */
-}
+
 
 .new {
     position: relative;

@@ -64,7 +64,7 @@ export default function Skills() {
   return (
     <div  className="flex items-center justify-center py-[16rem] min-h-screen bg-black text-white ">
       <div className="w-[80rem] space-y-20 overflow-hidden">
-        <h1 className="text-4xl font-bold">Skills</h1>
+        <h1 className="text-2xl md:text-4xl font-bold">Skills</h1>
         <div data-aos="zoom-out" data-aos-delay="300" className="space-y-24">
           <div className="flex animate-marquee">
             <div className="flex shrink-0 gap-[6rem]">

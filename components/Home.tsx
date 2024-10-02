@@ -1,9 +1,9 @@
 "use client"
 
 import { useState, useEffect } from 'react'
-import Image, { StaticImageData } from 'next/image' 
+import Image, { StaticImageData } from 'next/image'
 import { Button } from "@/components/ui/button"
-import img1 from "../app/assets/profile-pic.png" 
+import img1 from "../app/assets/profile-pic.png"
 import Link from 'next/link'
 import img2 from "../app/assets/socials/gg.png"
 import img3 from "../app/assets/socials/instagram.png"
@@ -76,9 +76,9 @@ export default function Home() {
 
                 if (displayText === currentTitle) {
                     setIsDeleting(true)
-                    timer = setTimeout(typeEffect, 1500)  
+                    timer = setTimeout(typeEffect, 1500)
                 } else {
-                    timer = setTimeout(typeEffect, 100)  
+                    timer = setTimeout(typeEffect, 100)
                 }
             } else {
                 setDisplayText(currentTitle.substring(0, displayText.length - 1))
@@ -87,7 +87,7 @@ export default function Home() {
                     setIsDeleting(false)
                     setJobTitleIndex((prevIndex) => (prevIndex + 1) % jobTitles.length)
                 }
-                timer = setTimeout(typeEffect, 50)  
+                timer = setTimeout(typeEffect, 50)
             }
         }
 
@@ -97,10 +97,10 @@ export default function Home() {
     }, [displayText, isDeleting, jobTitleIndex])
 
     return (
-        <div className="py-[16rem] flex items-center justify-center p-4">
-            <div className="max-w-7xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-8">
+        <div className="py-[10rem] md:py-[16rem] flex items-center justify-center p-4">
+            <div className="md:max-w-5xl lg:max-w-6xl xl:max-w-7xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-8">
                 <div data-aos="fade-right" className="text-center md:text-left space-y-14">
-                    <h1 className="text-4xl md:text-5xl font-semibold text-white mb-2">
+                    <h1 className="text-2xl md:text-4xl md:text-5xl font-semibold text-white mb-2">
                         Hey, I'm <span className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 text-transparent bg-clip-text">Ujala Singh</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-white mb-6 h-8">
@@ -108,11 +108,14 @@ export default function Home() {
                         <span className="animate-blink">|</span>
                     </p>
                     <div className="flex gap-4 justify-center md:justify-start mb-6">
-                        <Button variant="default"
-                            className="z-30 bg-white rounded-md text-black relative  after:-z-20 after:absolute after:h-1 after:w-1 after:bg-black after:-left-1 overflow-hidden after:bottom-[50%]  after:rounded-xl after:hover:scale-[100] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 border-2 text-md font-medium hover:text-white"
-                        >
-                            Contact
-                        </Button>
+                        <Link href="/contact">
+                            <Button variant="default"
+                                className="z-30 bg-white rounded-md text-black relative  after:-z-20 after:absolute after:h-1 after:w-1 after:bg-black after:-left-1 overflow-hidden after:bottom-[50%]  after:rounded-xl after:hover:scale-[100] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 border-2 text-md font-medium hover:text-white"
+                            >
+                                Contact
+                            </Button>
+
+                        </Link>
 
                         <Link
                             target='_blank'
@@ -124,7 +127,7 @@ export default function Home() {
                     </div>
                     <div className="flex gap-4 items-center justify-center md:justify-start text-white">
                         {
-                            links.map((link,index) => (
+                            links.map((link, index) => (
                                 <Link href={link.href} target='_blank'
                                     key={index}
                                 >
@@ -139,7 +142,7 @@ export default function Home() {
 
                     </div>
                 </div>
-                <div data-aos="fade-left"  className="w-48 h-48 md:w-[20rem] md:h-[20rem]  rounded-full overflow-hidden bg-[#2d3748] flex-shrink-0">
+                <div data-aos="fade-left" className="w-48 h-48 md:w-[20rem] md:h-[20rem]  rounded-full overflow-hidden bg-[#2d3748] flex-shrink-0">
                     <Image
                         src={img1}
                         alt="Ujala Singh"

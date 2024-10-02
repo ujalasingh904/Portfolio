@@ -21,7 +21,7 @@ export default function About() {
     return (
         <div className="flex items-center justify-center  min-h-screen bg-black text-white">
             <div className="w-[80rem] space-y-8">
-                <h1 className="text-4xl font-semibold">About Me</h1>
+                <h1 className="text-2xl md:text-4xl font-semibold">About Me</h1>
                 <div data-aos="fade-up">
                     <ul data-aos-delay="300" className="space-y-3">
                         {infoItems.map(({ icon: Icon, text, highlight, highlightClass, additionalText }, index) => (
