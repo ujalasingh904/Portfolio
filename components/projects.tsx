@@ -4,7 +4,7 @@ import { project } from "../app/constants/project";
 export default function Projects() {
     return (
         <div className="w-full flex items-center justify-center p-4 pb-[10rem] md:pb-[16rem]">
-            <div className="w-full flex flex-col md:max-w-5xl lg:max-w-6xl xl:max-w-7xl">
+            <div className="flex flex-col w-full md:max-w-5xl lg:max-w-6xl xl:max-w-7xl">
                 <h1 className="text-2xl md:text-4xl font-bold">Projects</h1>
                 <div className="flex  flex-wrap items-center justify-center md:justify-around w-full">
                     {project.map((item,index) => (

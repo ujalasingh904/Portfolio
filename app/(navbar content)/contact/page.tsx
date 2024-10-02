@@ -22,53 +22,53 @@ export default function Contact() {
     }
     
     return (
-        <div className="w-full flex items-center justify-center py-[10rem] min-h-screen bg-black text-white">
-            <div className="w-[80rem] space-y-12">
+        <div className="w-full flex items-center justify-center p-4 py-[10rem] md:py-[16rem] min-h-screen bg-black text-white">
+            <div className="w-full md:max-w-5xl lg:max-w-6xl xl:max-w-7xl space-y-12">
                 <h1 className="text-2xl md:text-4xl font-bold ">Contact</h1>
 
                 <div data-aos="zoom-in"  className="w-full flex justify-center">
 
-                    <form onSubmit={handleSubmit} className='flex flex-col gap-y-4 w-[32rem] p-16 rounded-xl border-gray-800 border-2  '>
+                    <form onSubmit={handleSubmit} className='flex flex-col gap-y-4 w-[32rem] p-8 sm:p-12 md:p-16 rounded-xl border-gray-800 border-2'>
                         <div>
-                            <label className="text-xl">Name</label>
+                            <label className="text-md md:text-xl">Name</label>
                             <input
                                 type="text"
                                 name="name"
                                 value={formData.name}
                                 onChange={handleChange}
                                 placeholder="John doe"
-                                className="w-full p-2 mt-2 rounded-lg bg-gray-50/15 outline-none border-2 border-transparent focus:border-white/50"
+                                className="w-full p-1 md:p-2 mt-2 rounded-lg bg-gray-50/15 outline-none border-2 border-transparent focus:border-white/50"
                                 required
                             />
                         </div>
                         <div>
-                            <label className="text-xl">Email</label>
+                            <label className="text-md md:text-xl">Email</label>
                             <input
                                 type="email"
                                 name="email"
                                 value={formData.email}
                                 onChange={handleChange}
                                 placeholder="johndoe@gmail.com"
-                                className="w-full p-2 mt-2 rounded-lg bg-gray-50/15 outline-none border-2 focus:border-white/50 border-transparent"
+                                className="w-full p-1 md:p-2 mt-2 rounded-lg bg-gray-50/15 outline-none border-2 focus:border-white/50 border-transparent"
                                 required
                             />
                         </div>
                         <div>
-                            <label className="text-xl">Message</label>
+                            <label className="text-md md:text-xl">Message</label>
                             <textarea
                                 name="message"
                                 value={formData.message}
                                 onChange={handleChange}
                                 placeholder="Write your message here"
-                                className="w-full p-2 mt-2 border-transparent rounded-lg h-32 bg-gray-50/15 outline-none border-2 focus:border-white/50"
+                                className="w-full p-1 md:p-2 mt-2 border-transparent rounded-lg h-32 bg-gray-50/15 outline-none border-2 focus:border-white/50"
                                 required
                             ></textarea>
                         </div>
-                        <div className="mt-[1rem]">
+                        <div className="md:mt-[1rem]">
                             <button
                                 type="submit"
                                 disabled={loading}
-                                className="w-full p-2 mt-2 rounded-lg bg-blue-500 text-white hover:opacity-60 transition-all duration-200 flex items-center justify-center gap-x-2"
+                                className="w-full p-1 md:p-2 mt-2 rounded-lg bg-blue-500 text-white hover:opacity-60 transition-all duration-200 flex items-center justify-center gap-x-2"
                             >
                                 {loading ? 'Sending...' : 'Send'}
                                 {!loading && <Send size={20} />}
