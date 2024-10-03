@@ -16,7 +16,7 @@ export default function Loading() {
         }
         return prevProgress + 1
       })
-    }, 50)
+    }, 10)
 
     return () => clearInterval(timer)
   }, [])
