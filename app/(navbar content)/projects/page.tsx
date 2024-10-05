@@ -8,8 +8,8 @@ export default function Projects() {
                 <h1 className="text-2xl md:text-4xl font-bold text-white">Projects</h1>
                 <div className="flex  flex-wrap items-center justify-center md:justify-around">
                     {project.map((item, index) => (
-                        <div data-aos="zoom-in-up" data-aos-delay={`${index * 300}`}>
-                            <ThreeDCardDemo index={index} key={item.id} title={item.title} description={item.description} image={item.image} live={item.live} source={item.source} />
+                        <div data-aos="zoom-in-up" data-aos-delay={`${index * 300}`} key={item.id}>
+                            <ThreeDCardDemo index={index}  title={item.title} description={item.description} image={item.image} live={item.live} source={item.source} />
                         </div>
                     ))}
 
