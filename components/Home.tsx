@@ -100,7 +100,7 @@ export default function Home() {
         <div className="py-[10rem] md:py-[16rem] flex items-center justify-center p-4">
             <div className="md:max-w-5xl lg:max-w-6xl xl:max-w-7xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-8">
                 <div data-aos="fade-right" className="text-center md:text-left space-y-14">
-                    <h1 className="text-2xl md:text-4xl md:text-5xl font-semibold text-white mb-2">
+                    <h1 className="text-2xl  md:text-5xl font-semibold text-white mb-2">
                         Hey, I'm <span className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 text-transparent bg-clip-text">Ujala Singh</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-white mb-6 h-8">
