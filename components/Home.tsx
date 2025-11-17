@@ -14,9 +14,10 @@ import img7 from "../app/assets/socials/github.png"
 
 const jobTitles = [
     "Web Developer",
-    "Full Stack Developer",
-    "Frontend Developer",
-    "Backend Developer"
+    "Full Stack Developer", 
+    "Tech Enthusiast",
+    "Software Engineer"
+ 
 ]
 
 
@@ -119,7 +120,7 @@ export default function Home() {
 
                         <Link
                             target='_blank'
-                            href="https://drive.google.com/file/d/1wew5Lq5fhXhe8oDYlpDLL5FylO-sfF7A/view?usp=drive_link">
+                            href="https://drive.google.com/file/d/18CQEYRXJj_ytX5toQTFZ1KiI7YN9r9HW/view?usp=drive_link">
                             <Button variant="default"
                                 className="z-30 bg-black rounded-md text-white relative  after:-z-20 after:absolute after:h-1 after:w-1 after:bg-white after:-left-1 overflow-hidden after:bottom-[50%]  after:rounded-xl after:hover:scale-[100] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 border-2 font-medium hover:text-black"
                             >RESUME</Button>

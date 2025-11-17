@@ -25,7 +25,7 @@ export const project: Project[] = [
     description:
       "Responsive Blogging platform where users can create, read,and save blogs with images, categorized for easy access.Built the app using  React.js, Tailwindcss, Clerk, TanstackQuery, Mongodb, Node.js, ImageKit",
     image: img7, // add image here
-    live: "https://blogverse.up.railway.app",
+    live: "https://blog-app-frontend-production.up.railway.app",
     source: "https://github.com/ujalasingh904/blog-app.git",
   },
   {

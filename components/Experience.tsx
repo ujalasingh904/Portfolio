@@ -11,6 +11,16 @@ interface Experience {
 
 const experiences: Experience[] = [
     {
+        title: "Frontend Web developer intern",
+        company: "Xzayogn",
+        period: "February 2025 - March 2025",
+        description: [
+            "Worked on developing the frontend for the demo phase of Xzayogn",
+            "Built all pages from scratch based on the provided UI designs and ensured full responsiveness.",
+            "Utilized React.js, TypeScript, and Tailwind CSS for development and styling."
+        ]
+    },
+    {
         title: "Full stack developer intern",
         company: "Mnnlr Inc.",
         period: "August 2024 - September 2024",
@@ -20,7 +30,7 @@ const experiences: Experience[] = [
             "Used MERN tech stack during the internship"
         ]
     },
-
+    
 ]
 
 export default function ExperienceSection() {

@@ -20,7 +20,7 @@ export default function Page() {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 600,
+      duration: 400,
       easing: 'ease-in-sine', 
       once: true,      
     });

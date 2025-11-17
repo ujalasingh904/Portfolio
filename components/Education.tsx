@@ -16,7 +16,7 @@ const EducationArray: EducationItemProps[] = [
         institution: "GD Goenka University",
         location: "sohna, Haryana,India",
         year: "2022 - 2026",
-        cgpa: "9.0",
+        cgpa: "8.8",
         maxcgpa: "10",
         achievements: [
             "Ranked 3rd in internal SIH hackathon,2024",
@@ -28,8 +28,8 @@ const EducationArray: EducationItemProps[] = [
         institution: "Global Public School",
         location: "gurugram, Haryana,India",
         year: "2020 - 2021",
-        cgpa: "86.4%",
-        maxcgpa: "100%",
+        cgpa: "9.1",
+        maxcgpa: "10",
         achievements: [
             "Ranked in top 10% of the class",
         ]
@@ -39,8 +39,8 @@ const EducationArray: EducationItemProps[] = [
         institution: "Global Public School",
         location: "gurugram, Haryana,India",
         year: "2018 - 2019",
-        cgpa: "91.2%",
-        maxcgpa: "100%",
+        cgpa: "9.62",
+        maxcgpa: "10",
         achievements: [
             "Ranked in top 5% of the class", 
             "Awarded 2 Trophies for scoring more than 90% in board exams"

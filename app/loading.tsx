@@ -24,7 +24,7 @@ export default function Loading() {
   useEffect(() => {
     controls.start({
       width: `${progress}%`,
-      transition: { duration: 0.5, ease: "easeInOut" }
+      transition: { duration: 0.01, ease: "easeInOut" }
     })
   }, [progress, controls])
 

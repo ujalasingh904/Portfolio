@@ -11,7 +11,7 @@ export default function About() {
     const infoItems = [
         { icon: FaLocationDot, text: 'Lives in', highlight: 'Gurugram, Haryana, India', highlightClass: 'border-b-2 cursor-pointer' },
         { icon: FaGraduationCap, text: 'Pursuing a Bachelor’s degree in', highlight: 'Computer Science and Engineering', highlightClass: 'text-blue-600', additionalText: 'from GD Goenka University, Sohna.' },
-        { icon: FaTools, text: 'Primarily work with', highlight: 'React.js, Next.js, Tailwind CSS, Node.js, Express.js, JavaScript, MongoDB, and TypeScript', highlightClass: 'text-blue-600' },
+        { icon: FaTools, text: 'Primarily work with', highlight: 'React.js, Next.js, Tailwind CSS, Node.js, SQL, Express.js, JavaScript, Python, MongoDB, and TypeScript', highlightClass: 'text-blue-600' },
         { icon: HiShoppingBag, text: 'Open to new opportunities and freelancing. Any support is appreciated!' },
         { icon: FaPeopleGroup, text: 'Always open to collaborating on research or development.' },
         { icon: FaMedal, text: 'Archery player with a strong interest in badminton' },
@@ -23,6 +23,11 @@ export default function About() {
             <div className="md:max-w-5xl lg:max-w-6xl xl:max-w-7xl space-y-12">
                 <h1 className="text-2xl md:text-4xl font-semibold">About Me</h1>
                 <div data-aos="fade-up" data-aos-delay="300" className="space-y-8">
+                    <p className="text-sm sm:text-md md:text-xl tracking-wide">
+                        I am a full-stack developer with expertise in modern web technologies like  React.js, Next.js, Tailwind CSS, Node.js, SQL, Express.js, JavaScript, Python, MongoDB, and TypeScript.
+                        Currently in my 4th year of pursuing a B.Tech in Computer Science and Engineering from GD Goenka University, Gurugram, I am passionate about full-stack web development.
+                        I describe myself as an enthusiastic, hardworking, and curious learner, always eager to explore new fields in life and technology. Aspiring to become a successful software engineer, I am dedicated to continuous learning and growth in the field of web development.
+                    </p>
                     <ul className="space-y-3">
                         {infoItems.map(({ icon: Icon, text, highlight, highlightClass, additionalText }, index) => (
                             <li key={index} className="flex space-x-4 md:space-x-8 items-center">
@@ -33,11 +38,6 @@ export default function About() {
                             </li>
                         ))}
                     </ul>
-                    <p className="text-sm sm:text-md md:text-xl tracking-wide">
-                        I am a full-stack developer with expertise in modern web technologies like  React.js, Next.js, Tailwind CSS, Node.js, Express.js, JavaScript, MongoDB, and TypeScript.
-                        Currently in my 3rd year of pursuing a B.Tech in Computer Science and Engineering from GD Goenka University, Gurugram, I am passionate about full-stack web development.
-                        I describe myself as an enthusiastic, hardworking, and curious learner, always eager to explore new fields in life and technology. Aspiring to become a successful software engineer, I am dedicated to continuous learning and growth in the field of web development.
-                    </p>
                 </div>
             </div>
         </div>
